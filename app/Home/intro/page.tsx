@@ -17,11 +17,12 @@ function Page() {
       <div className='flex flex-col justify-center items-center text-center text-white font-bold gap-y-8 p-8'>
         <h1 className=' hover:underline text-4xl md:text-5xl lg:text-6xl text-slate-300'>BOND Connect and Grow</h1>
         <p className='px-4 md:px-20 text-lg md:text-2xl lg:text-3xl text-gray-400'>
-          At BOND, developers unite to collaborate, solve challenges, and enhance their skills. 
-          Earn points by tackling questions, boost your profile, and connect with peers in your field. 
-          With our helpful chatbot by your side, you're never alone on your journey to success. 
-          Join us and take your development career to new heights!
-        </p>
+        At BOND, developers unite to collaborate, solve challenges, and enhance their skills.
+        Earn points by tackling questions, boost your profile, and connect with peers in your field.
+        With our helpful chatbot by your side, you&apos;re never alone on your journey to success.
+        Join us and take your development career to new heights!
+</p>
+
         <motion.div
         className='bg-blue-800 px-4 rounded-3xl text-3xl font-thin'
         whileHover={{ scale: 1.1 }}
