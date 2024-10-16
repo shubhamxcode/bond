@@ -25,3 +25,14 @@ body {
     text-wrap: balance;
   }
 }
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform-origin:0%;
+  z-index: 999;
+  background-color:red;
+  height: 5px;
+  width: 100%;
+
+}
