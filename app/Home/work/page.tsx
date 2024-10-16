@@ -3,13 +3,13 @@ import React from 'react'
 import { IoCreateOutline } from "react-icons/io5";
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-interface Card {
-  id: number;
-  num: number;
-  image: JSX.Element; // Use JSX.Element for React elements
-  step: string;
-  description: string;
-}
+// interface Cards {
+//   id: number;
+//   num: number;
+//   image: JSX.Element; // Use JSX.Element for React elements
+//   step: string;
+//   description: string;
+// }
  const cards=[
   {id:1,num:1,image:<IoCreateOutline />,step:'step1:signup',description:"Create Accounts using GitHub and LeetCode to Earn Points and Enhance Website Development Skills"},
   {id:2,num:2,image:<IoCreateOutline />,step:'step1:login with github/leetcode',description:"Create Accounts on GitHub and LeetCode to Earn Points and Enhance Website Development Skills"},
@@ -39,7 +39,7 @@ const [selectedId, setSelectedId] = useState<number | null>(null);
   {selectedId && (
     cards.map((card)=>(
       card.id===selectedId &&(
-        <motion.div key={card.id} layoutId={selectedId===card.id.toString():undefined} className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-80'>
+        <motion.div key={card.id} layoutId={selectedId} className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-80'>
           <div className='bg-white p-5 rounded-lg shadow-lg text-center'>
         <motion.div layoutId={selectedId}>
         <motion.h5 className='text-2xl w-10 h-10 rounded-2xl bg-gray-600'>{card.num}</motion.h5>
