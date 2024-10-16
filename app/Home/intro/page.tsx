@@ -1,20 +1,22 @@
 "use client"
 import React from 'react';
 import { motion } from "framer-motion";
+import Work from '../work/page'
 function Page() {
   return (
+    <>
     <motion.div className=''
     initial={{ opacity: 0, scale:2 }}
     animate={{ opacity: 3, scale:1 }}
     transition={{
       duration: 4.5,
-      delay: 2,
+      delay:1,
       ease: [0, 0.71, 0.2, 1.01]
     }}>
-    <div className='flex min-h-screen'>
+    <div className='flex min-h-screen '>
       <div className='flex flex-col justify-center items-center text-center text-white font-bold gap-y-8 p-8'>
-        <h1 className='text-4xl md:text-5xl lg:text-6xl'>BOND Connect and Grow</h1>
-        <p className='px-4 md:px-20 text-lg md:text-2xl lg:text-3xl'>
+        <h1 className=' hover:underline text-4xl md:text-5xl lg:text-6xl text-slate-300'>BOND Connect and Grow</h1>
+        <p className='px-4 md:px-20 text-lg md:text-2xl lg:text-3xl text-gray-400'>
           At BOND, developers unite to collaborate, solve challenges, and enhance their skills. 
           Earn points by tackling questions, boost your profile, and connect with peers in your field. 
           With our helpful chatbot by your side, you're never alone on your journey to success. 
@@ -30,6 +32,8 @@ function Page() {
       </div>
     </div>
     </motion.div>
+    <Work/>
+    </>
   );
 }
 
