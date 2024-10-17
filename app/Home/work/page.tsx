@@ -56,8 +56,7 @@ function Work() {
             >
               <div className='bg-white p-5 rounded-lg shadow-lg text-center'>
                 <motion.div>
-                  <motion.h5 className='text-2xl w-10 h-10 rounded-2xl bg-gray-600'>{selectcard.num}</motion.h5>
-                  <motion.h2 className='text-3xl'>{selectcard.image}</motion.h2>
+                  <motion.h5 className='m-auto text-2xl w-10 h-10 rounded-2xl bg-gray-600'>{selectcard.num}</motion.h5>
                   <motion.h2 className='text-xl text-green-500'>{selectcard.step}</motion.h2>
                   <motion.h2 className='text-lg text-slate-800'>{selectcard.description}</motion.h2>
                 </motion.div>
