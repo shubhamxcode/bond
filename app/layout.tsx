@@ -41,7 +41,7 @@ export default function RootLayout({
             <ul className="flex items-center space-x-10">
               <li>Log in</li>
               <li>contact</li>
-              <li className="bg-blue-700 p-2 rounded-sm">Get started-Free</li>
+              <li className="bg-blue-700 p-2 rounded-xl">Get started-Free</li>
             </ul>
           </nav>
         </div>

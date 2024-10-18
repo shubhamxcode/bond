@@ -26,7 +26,7 @@ function Work() {
       <div id='content'>
         <h1 className='hover:underline text-center text-5xl font-bold'>HOW IT WORKS?</h1>
       </div>
-      <div className='flex flex-wrap justify-evenly' id='cards'>
+      <div className='flex flex-wrap justify-around ' id='cards'>
         {cards.map((card) => (
           <motion.div
             key={card.id}
@@ -34,11 +34,11 @@ function Work() {
             className='hover:cursor-pointer'
             onClick={() => setSelectedId(selectedId === card.id ? null : card.id)}
           >
-            <div className='m-5 text-balance w-full h-72 flex flex-col border border-slate-600 text-center items-center justify-center shadow-2xl shadow-gray-400 transition-all duration-300 hover:scale-110 hover:bg-slate-900'>
+            <div className='m-5 text-balance h-72 flex flex-col border border-slate-600 text-center items-center justify-center shadow-2xl shadow-gray-400 transition-all duration-300 hover:scale-110 hover:bg-slate-900'>
               <h1 className='text-2xl w-10 h-10 rounded-2xl bg-gray-600'>{card.num}</h1>
               <h2 className='text-3xl'>{card.image}</h2>
               <h2 className='text-xl text-green-500'>{card.step}</h2>
-              <p className='text-lg'>{card.description}</p>
+              <p className='text-lg text-balance'>{card.description}</p>
             </div>
           </motion.div>
         ))}
