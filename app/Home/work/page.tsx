@@ -10,11 +10,10 @@ interface Card{
   step: string;
   description: string;
 }
-
 const cards: Card[]= [
   { id: 1, num: 1, image: <IoCreateOutline />, step: 'Step 1: Signup', description: "Create Accounts using GitHub and LeetCode to Earn Points and Enhance Website Development Skills" },
   { id: 2, num: 2, image: <IoCreateOutline />, step: 'Step 2: Login with GitHub/LeetCode', description: "Create Accounts on GitHub and LeetCode to Earn Points and Enhance Website Development Skills" },
-  { id: 3, num: 3, image: <IoCreateOutline />, step: 'Step 3: Select Your Field', description: "Create Accounts on GitHub and LeetCode to Earn Points and Enhance Website Development Skills" },
+  { id: 3, num: 3, image: <IoCreateOutline />, step: 'Step 3: Select Your Field', description: "Create Accounts on GitHub and LeetCode to Earn Points and Enhance your profile and unlock developer sticker" },
 ];
 
 function Work() {

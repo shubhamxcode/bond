@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import Work from '../work/page'
+import Features from '../Features/page'
 function Page() {
   return (
     <>
@@ -34,6 +35,7 @@ function Page() {
     </div>
     </motion.div>
     <Work/>
+    <Features/>
     </>
   );
 }
