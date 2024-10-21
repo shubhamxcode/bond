@@ -9,7 +9,7 @@ export default function AuthPage() {
     <div className="flex flex-col items-center justify-center h-screen">
       {session ? (
         <>
-          <h1 className="text-2xl">Signed in as {session.user.email}</h1>
+          <h1 className="text-2xl">Signed in as {session.user?.email}</h1>
           <button
             className="mt-4 px-4 py-2 bg-red-500 text-white rounded"
             onClick={() => signOut()}
